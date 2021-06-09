@@ -5,9 +5,6 @@ from threading import Thread
 
 size = 10000000  # Number of random numbers to add to list
 n_threads = 8  # Number of threads to create
-res = []
-for i in range(n_threads):
-    res.append([])
 
 
 def gen_random_num(count):
