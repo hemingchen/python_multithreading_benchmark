@@ -20,11 +20,11 @@ def single_thread():
 def multithreaded():
     threads = [Thread(target=gen_random_num, args=(size,)) for _ in range(n_threads)]
 
-    for j in threads:
-        j.start()
+    for t in threads:
+        t.start()
 
-    for j in threads:
-        j.join()
+    for t in threads:
+        t.join()
 
 
 def multiprocessed():
