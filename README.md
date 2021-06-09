@@ -3,8 +3,9 @@
 
 ## 1. Setup
 
-Single thread   | Run job n times
+Test            | Method
 ---------------:| :--------------------------------------------------------------------
+Single thread   | Run job n times
 Multi-threaded  | Run job n times on multiple threads using `threading.Thread`
 Multi-processed | Run job n times on multiple processes using `multiprocessing.Process`
 
